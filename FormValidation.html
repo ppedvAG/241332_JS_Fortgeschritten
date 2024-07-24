@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <form name="myForm" action="#" method="post" onsubmit="return validateForm()">
+        Name: <input type="text" name="fname">
+    </form>
+
+    <script>
+
+        function validateForm() {
+            let leer = document.forms["myForm"]["fname"].value;
+            if(leer == "") {
+                alert("Name muss ausgefüllt sein");
+                return false;
+            }
+        }
+
+    </script>
+
+</body>
+</html>

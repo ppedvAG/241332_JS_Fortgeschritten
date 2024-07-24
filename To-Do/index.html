@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do-Liste mit Ablaufdatum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Meine To-Do-Liste</h1>
+    <input type="text" id="task" placeholder="Neue Aufgabe eingeben">
+    <button onclick="addTask()">Hinzufügen</button>
+    <div class="columns">
+        <div class="column">
+            <h2>Ausstehend</h2>
+            <ul id="pendingTasks">
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Erledigt</h2>
+            <ul id="completedTasks">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

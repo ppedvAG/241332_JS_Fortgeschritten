@@ -1,0 +1,57 @@
+
+    <!--
+    Aufgabe: Erstelle eine To-Do-Liste mit Ablaufdatum
+
+    Ziel: Das Ziel dieser Aufgabe ist es, eine interaktive To-Do-Liste zu erstellen, 
+    die es Benutzern ermöglicht, Aufgaben hinzuzufügen, den Status der Aufgaben zu ändern 
+    und ein zufällig generiertes Ablaufdatum für jede Aufgabe anzuzeigen.
+
+    Schritte:
+
+    1. HTML-Grundgerüst erstellen:
+    - Erstelle eine HTML-Datei mit einer Überschrift, einem Eingabefeld, 
+    einer Schaltfläche zum Hinzufügen von Aufgaben und zwei Spalten für ausstehende und erledigte Aufgaben.
+
+    Tipp: Verwende <input>, <button>, <ul> und <li>-Elemente in deiner HTML-Datei. 
+        Verwende auch Klassen und IDs, um Elemente zu identifizieren.
+
+    2. CSS-Styles festlegen:
+    - Verwende CSS, um das Layout der To-Do-Liste zu gestalten.
+    - Stelle sicher, dass die ausstehenden und erledigten Aufgaben in verschiedenen Spalten angezeigt 
+      werden und ein ansprechendes Design haben.
+
+    Tipp: Verwende CSS-Klassen, um das Styling zu organisieren, und Flexbox oder Grid-Layout für die Spalten.
+
+    3. JavaScript-Funktion zum Hinzufügen von Aufgaben:
+    - Schreibe eine JavaScript-Funktion addTask, die aufgerufen wird, wenn Benutzer auf die Hinzufügen-Schaltfläche klicken.
+    - Die Funktion sollte den eingegebenen Text aus dem Eingabefeld abrufen und prüfen, 
+      ob er leer ist. Wenn nicht, sollte sie eine neue Aufgabe in die "Ausstehend"-Spalte einfügen.
+
+    Tipp: Du kannst document.getElementById verwenden, um auf das Eingabefeld und die Aufgabenliste zuzugreifen. 
+          Verwende die createElement-Methode, um neue Aufgaben zu erstellen.
+
+    4. Zufällige Ablaufdaten generieren:
+    - In der addTask-Funktion, generiere ein zufälliges Ablaufdatum für jede Aufgabe. 
+      Dies kann durch Hinzufügen einer zufälligen Anzahl von Tagen zum aktuellen Datum erfolgen.
+
+    Tipp: Verwende new Date() und setDate() für die Datumsmanipulation.
+
+    5. Ablaufdatum in die Aufgabenliste einfügen:
+    - Füge das zufällig generierte Ablaufdatum als Text zur Aufgabe hinzu, damit es neben dem Aufgabentext angezeigt wird.
+
+    Tipp: Erstelle ein neues <span>-Element für das Ablaufdatum und füge es als Kind zur Aufgabe hinzu.
+
+    6. Status der Aufgaben ändern:
+    - Schreibe JavaScript-Code, der es ermöglicht, den Status einer Aufgabe zwischen 
+      "ausstehend" und "erledigt" umzuschalten. Wenn auf eine Aufgabe in der "Ausstehend"-Spalte geklickt wird, 
+      sollte sie in die "Erledigt"-Spalte verschoben werden, und das Ablaufdatum sollte durch "Erledigt" ersetzt werden. 
+      Wenn auf eine Aufgabe in der "Erledigt"-Spalte geklickt wird, sollte sie zurück 
+      in die "Ausstehend"-Spalte verschoben werden, und das ursprüngliche Ablaufdatum sollte wiederhergestellt werden.
+
+    Tipp: Du kannst eine CSS-Klasse wie "completed" verwenden, um den Status einer Aufgabe zu 
+    markieren und die Darstellung zu ändern.
+
+    7. Abschluss und Tests:
+    - Überprüfe deine To-Do-Liste, um sicherzustellen, dass sie wie erwartet funktioniert. 
+      Füge Aufgaben hinzu, markiere sie als erledigt und achte darauf, dass das Ablaufdatum korrekt angezeigt wird.
+-->

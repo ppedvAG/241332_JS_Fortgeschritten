@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlen Analysieren</title>
+</head>
+<body>
+    
+    <script>
+
+            // Übung: Analyse von Zahlen
+
+            // - Zahlen überprüfen: Überprüfe, ob eine Zahl in der Liste größer als 10 ist.
+            // - Summe berechnen: Berechne die Summe aller Zahlen in der Liste.
+            // - Maximale Zahl finden: Finde die größte Zahl in der Liste.
+            // - Negative Zahlen entfernen: Entferne alle negativen Zahlen aus der Liste.
+
+             // Array für die Zahlen
+            const numbers = [5, 12, -3, 8, 15, -2];
+
+
+
+            // Funktion zum Überprüfen, ob die Zahl größer als 10 ist
+            function checkNumber() {
+                let hasNumberGreaterThan10 = false;
+
+                for(let i = 0; i < numbers.length; i++) {
+                    if(numbers[i] > 10) {
+                        hasNumberGreaterThan10 = true;
+                        break;
+                    }
+                }
+
+                if(hasNumberGreaterThan10 == true) {
+                    console.log("Es gibt mindestens eine Zahl größer als 10");
+                }
+                else {
+                    console.log("Es gibt keine Zahl die größer als 10 ist");
+                }
+            }
+
+
+            // Funktion zum Berechnen der Summe aller Zahlen
+            function calculateSum() {
+                let sum = 0;
+
+                for(let i = 0; i < numbers.length; i++) {
+                    sum += numbers[i];
+                }
+
+                console.log("Die Summe aller zahlen beträgt: " + sum);
+            }
+
+
+
+            // Funktion zum Finden der maximalen Zahl in der Liste
+            function findMaxNumber() {
+                if(numbers.length == 0) {
+                    console.log("Die Liste ist leer. Es gibt keine Zahlen");
+                    return
+                }
+
+                let maxNumber = numbers[0];
+
+                for(let i = 1; i < numbers.length; i++) {
+                    if(numbers[i] > maxNumber) {
+                        maxNumber = numbers[i];
+                    }
+                }
+                
+                console.log("Die maximale Zahl in der Liste ist: " + maxNumber);
+            }
+
+
+            // Funktion zum Entfernen negativer Zahlen aus der Liste
+            function removeNegativeNumber() {
+                const positiveNumbers = []
+
+                for(let i = 0; i < numbers.length; i++) {
+                    if(numbers[i] >= 0) {
+                        positiveNumbers.push(numbers[i]);
+                    }
+                }
+
+                console.log("Liste nach Entfernen der Negativen Zahlen:");
+                console.log(positiveNumbers);
+            }
+
+            checkNumber();
+            calculateSum();
+            findMaxNumber();
+            removeNegativeNumber();
+
+
+    </script>
+
+</body>
+</html>

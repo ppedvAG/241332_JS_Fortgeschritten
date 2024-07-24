@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..." type="text/css">
+    <title>Fetch API</title>
+</head>
+<body>
+    <p id="demo">Fetch a file to change this text.</p>
+    <script>
+
+        getText("C:\\Users\\pl2\\OneDrive - ppedv AG\\Desktop\\JS_Fortgeschritten_170724");
+
+        async function getText(file) {
+        let x = await fetch(file);
+        let y = await x.text();
+        document.getElementById("demo").innerHTML = y;
+        }
+
+
+    </script>
+</body>
+</html>

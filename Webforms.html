@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webforms</title>
+</head>
+<body>
+    
+    <form name="fname" action="#" method="#">
+
+        Suche:          <input type="search" required>           <!-- Suchfeld --> <br>
+        URL:            <input type="url">              <!-- Absolute URLS * --><br>
+        Tel:            <input type="tel">              <!-- Telefonnummern --><br>
+        Email:          <input type="email">            <!-- EMail-Adressen * --><br>
+        Number:         <input type="number">           <!-- Fließkommazahlen *--><br>
+        Range:          <input type="range">            <!-- Fließkommazahlen auf einer nicht sichtbaren Skala --><br>
+        Color:          <input type="color">            <!-- Farbangaben --><br>
+        Date:           <input type="date">             <!-- Datum --><br>
+        Month:          <input type="month">            <!-- Monat --><br>
+        Week:           <input type="week">             <!-- Woche --><br> 
+        Time:           <input type="time">             <!-- Zeit --><br>
+        Datetime-Local: <input type="datetime-local">   <!-- Datum + Zeit --><br>
+        Datetime:       <input type="datetime">         <!-- Datum + Zeit UTC --><br>
+
+        <input type="submit" value="Absenden!">
+
+        <input type="text" list="farben" autocomplete="on">
+        <datalist id="farben">
+            <option value="Rot"></option>
+            <option value="Grün"></option>
+            <option value="Blau"></option>
+        </datalist>
+
+    </form>
+
+
+</body>
+</html>
